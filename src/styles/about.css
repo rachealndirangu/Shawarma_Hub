@@ -1,0 +1,100 @@
+.about {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  background: #fafafa;
+  padding: 2em;
+}
+.about .upper {
+  display: flex;
+}
+
+.image-section {
+  width: 50%;
+  display: flex;
+}
+.image-section .ab-img {
+  width: 100%;
+  height: 450px;
+  margin: 0.2em;
+  margin-left: 2em;
+  background-size: cover;
+  /* background: red; */
+  border: 1px solid white;
+  border-radius: 13px;
+  scale: .85;
+}
+.image-section:nth-child(2) {
+  position: absolute;
+  top: 10px;
+}
+.image-section .ab-img img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid green;
+  /* border-radius: 13px; */
+
+}
+.about .content {
+  /* background: red; */
+  width: 50%;
+  margin-right: 3em;
+}
+.about .content .one {
+  font-family: cursive;
+  font-size: 2.5em;
+  color: #d4af7b;
+}
+.about .content .lxc {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.8em;
+}
+.about .cont {
+  font-size: 1.2em; 
+  color: rgb(169, 165, 165);
+  text-align: start;
+}
+.about .time {
+  font-size: 1.4em;
+  color: rgb(46, 45, 45);
+  text-align: center;
+  margin: .6em;
+}
+.about .bold{
+    font-weight: 700;
+}
+.about .phone {
+    font-family: cursive;
+    font-size: 2.4em;
+    color: #d4af7b;
+    font-weight: 700;
+}
+.more{
+  margin-bottom: 3em;
+}
+
+
+@media screen and (max-width:480px) {
+  .about .upper {
+    flex-direction: column;
+  }
+  .image-section {
+    width: 100%;
+    background: rgb(200, 199, 199);
+  }
+  .image-section .ab-img {
+    width: 100%;
+    height: auto;
+    scale: 1;
+    margin: 0 auto;
+  }
+  .image-section .ab-img img {
+    width: 100%;
+  }
+  .about .content {
+    width: 100%;
+  }
+  .about .cont {
+    text-align: start;
+  }
+}

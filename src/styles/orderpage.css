@@ -1,0 +1,180 @@
+.orderpage {
+  width: 99%;
+  height: 100vh;
+  background: #f0f2f8;
+  /* position: absolute; */
+  /* top: 5em; */
+  margin: 3em auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  z-index: 100;
+  /* position: relative; */
+  top: 0;
+  scale: 0.9;
+}
+/* Add this to your CSS file or style tag */
+
+.orderpage .name {
+  font-size: 1.6em;
+  padding: 0.4em;
+  /* background: red; */
+  font-weight: 600;
+  width: 100%;
+  padding-left: 0.8em;
+  text-align: start;
+  color: #d4af7b;
+}
+.orderpage .details,
+.orderpage .payment {
+  /* width: 500px; */
+  width: 95%;
+  height: 400px;
+  /* aspect-ratio: 3/2; */
+  background-color: white;
+  border-radius: 10px;
+  /* margin: .5em; */
+  margin-bottom: 0.6em;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 400px; */
+  /* justify-content: center; */
+}
+.details .top {
+  /* background: green; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.9em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.details .top .right {
+  /* background: green; */
+  /* width: 40%; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 700;
+  scale: 0.5;
+  margin-right: -4em;
+
+  /* padding: .5em; */
+}
+.details .top .right .plus,
+.minus {
+  /* width: 70px; */
+  /* height: 70px; */
+  /* margin-left: 0.1em; */
+  font-size: 2.2em;
+  padding: 0.5em;
+  /* margin: .5em; */
+  line-height: 2vh;
+  scale: 0.7;
+  border-radius: 10px;
+
+  background: #d4af7b;
+  transition: all .2s;
+}
+.details .qty{
+    font-size: 2em;
+    margin: 0 .5em;
+}
+.details .top .right .plus:hover,
+.minus:hover {
+  scale: 0.7;
+  box-shadow: 1px 3px 15px black;
+}
+.details .middle {
+  /* background: green; */
+  margin: 0.3em;
+  width: 100%;
+}
+.details .middle .input-object {
+  width: 100%;
+  margin: 1.5em;
+  height: 6vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.details .company input {
+  color: #d4af7b !important;
+}
+.details .middle .input-object label {
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 80px;
+  text-align: start;
+  margin-right: 1.5em;
+}
+.details .middle input {
+  outline: none;
+  border: none;
+  border-bottom: 0.1px solid grey;
+  padding: 0.5em;
+  background: none;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  width: 55%;
+}
+.orderpage .payment {
+  display: grid;
+  place-content: center;
+}
+.orderpage h3 {
+  font-size: 1.2em;
+  text-align: left;
+}
+.orderpage .payment input {
+  outline: none;
+  border: none;
+  border-bottom: 0.1px solid grey;
+  padding: 0.5em;
+  height: 50px;
+  background: none;
+  font-weight: 470;
+  font-size: 0.2em;
+  margin-left: 0.5em;
+  width: 100%;
+  font-size: 1em!important;
+  margin: 0.5em auto;
+}
+.orderpage .payment input::placeholder {
+  font-size: 0.6em;
+  color: #d4af7b;
+}
+.orderpage .payment .pay-btn {
+  /* text-align: center; */
+  outline: none;
+  color: white;
+  background: #d4af7b;
+  /* padding: .5em 1.2em; */
+  font-size: 1.2em;
+  border: none;
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+  border-radius: 50px;
+  transition: all .5s;
+}
+.orderpage .payment .paybtnx:hover {
+  scale: .95;
+  box-shadow: 10px 15px 20px rgb(131, 128, 128);
+}
+
+@media screen and (min-width: 468px) {
+  .orderpage {
+    flex-direction: column;
+    width: 50%;
+    scale: 0.8;
+    margin: 2.5em auto;
+  }
+}

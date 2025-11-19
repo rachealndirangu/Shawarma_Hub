@@ -1,0 +1,143 @@
+.specific-menu {
+  /* background: red; */
+  margin: 0.4em;
+  /* padding: 1.5em; */
+  scale: 0.95;
+}
+.specific-menu .container {
+  display: flex;
+  border: 0.1px solid rgb(213, 210, 210);
+  width: 600px;
+  max-width: 600px;
+  height: 250px;
+  border-radius: 5px;
+}
+.container .left {
+  width: 50%;
+}
+.container .left img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 13px;
+  object-fit: cover;
+  /* padding: .5em; */
+  /* scale: .95; */
+}
+.container .right {
+  /* background: red; */
+  width: 50%;
+  display: grid;
+  place-content: center;
+}
+.container .right .top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6em;
+  /* background: red; */
+  height: 50px;
+  padding: 0.5em;
+}
+.container .right .top h3 {
+  font-weight: 650;
+  padding-right: 0.4em;
+  font-size: 1.2em;
+  width: 70%;
+  font-size: 1.4em;
+  position: absolute;
+  right: 5px;
+  /* background: green; */
+}
+.container .right .top p {
+  font-weight: 650;
+  padding-right: 0.4em;
+  color: #d4af7b;
+  position: absolute;
+  right: 10px;
+  /* margin-left: 1.em; */
+}
+
+.std-btn {
+  text-align: left;
+  outline: none;
+  color: white;
+  background: #d4af7b;
+  padding: 0.5em;
+  font-size: 1.3em;
+  border: none;
+  margin-top: 1em;
+}
+.container .right .content {
+  color: rgb(169, 165, 165);
+  color: black;
+  font-size: 1.1em;
+  font-weight: 400;
+  /* background: green; */
+  /* width: 80%; */
+  height: 90px;
+  margin: 0 auto;
+  text-align: start;
+  padding: 0.9em;
+}
+
+@media screen and (max-width: 480px) {
+   .specific-menu {
+      /* background: red; */
+      margin-bottom: 0.4em;
+      /* padding: 1.5em; */
+      scale: 1!important;
+      width: 100%;
+    }
+  .specific-menu .container {
+    flex-direction: column;
+    width: 100%!important;
+    height: 450px;
+  }
+  .container .left {
+    width: 100%;
+    height: 50%;
+  }
+  .container .right {
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .right .top {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0.6em;
+    margin-bottom: .1em;
+    /* background: red; */
+    height: 50px;
+    /* padding: 0.5em; */
+  }
+  .container .right .top h3 {
+    font-weight: 650;
+    /* padding-right: 0.4em; */
+    font-size: 1.2em;
+    width: auto;
+    font-size: 1.4em;
+    position: absolute;
+    left: 15px;
+    /* background: green; */
+    text-align: start;
+  }
+  .container .right .content {
+   color: rgb(169, 165, 165);
+   color: black;
+   font-size: 1.2em;
+   font-weight: 400;
+   /* background: green; */
+   /* width: 80%; */
+   height: 90px;
+   margin: 0 9px;
+   text-align: start;
+   padding-top: 0em;
+ }
+ .std-btn {
+   position: absolute;
+   left: 10px;
+   /* margin-bottom: 1.5em; */
+ }
+}
